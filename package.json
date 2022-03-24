@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon",
     "prod": "node -r ts-node/register/transpile-only -r ts-node/register ./dist/index.js",
-    "buld": "tsc",
+    "buld": "tsc -p tsconfig.prod.json",
     "test": "jest",
     "watch":"jest --watch",
     "coverage":"jest --coverage"
